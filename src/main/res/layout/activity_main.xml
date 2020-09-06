@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:foreground="@drawable/ic_launcher_foreground"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <Button
+
+        android:id="@+id/btnAdd"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="ADD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/etItem"
+        style="@android:style/Widget.EditText"
+        android:layout_width="310dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toStartOf="@+id/btnAdd"
+        android:autofillHints=""
+        android:background="#FFFFFF"
+        android:cursorVisible="?android:attr/windowOverscan"
+        android:ems="10"
+        android:filterTouchesWhenObscured="false"
+        android:fontFamily="sans-serif-light"
+        android:foregroundTint="#00FFFFFF"
+        android:hint="@string/add_an_item"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvItems"
+        style="@style/ThemeOverlay.AppCompat.Dialog.Alert"
+        android:layout_width="match_parent"
+        android:layout_height="555dp"
+        android:layout_above="@+id/etItem"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="-6dp"
+        android:background="#FFFFFF"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+</RelativeLayout>
